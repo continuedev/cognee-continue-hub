@@ -1,0 +1,12 @@
+name: Cognee MCP
+version: 0.0.1
+schema: v1
+
+mcpServers:
+  - name: Docker MCP Github
+    command: docker
+    args:
+      - run
+      - -i
+      - --rm
+      - cognee/cognee:main

@@ -1,5 +1,5 @@
 name: Cognee MCP
-version: 1.0.3
+version: 1.0.4
 schema: v1
 
 mcpServers:
@@ -7,8 +7,10 @@ mcpServers:
     command: docker
     args:
       - run
-      - --env-file "${{ inputs.COGNEE_ENV_FILE_PATH }}"
-      - -v "${{ inputs.COGNEE_SHARED_DIR_PATH }}:/app/data"
+      - --env-file
+      - "${{ inputs.COGNEE_ENV_FILE_PATH }}"
+      - -v
+      - "${{ inputs.COGNEE_SHARED_DIR_PATH }}:/app/data"
       - -i
       - --rm
       - cognee/cognee-mcp:main

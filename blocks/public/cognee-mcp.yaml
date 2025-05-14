@@ -1,5 +1,5 @@
 name: Cognee MCP
-version: 1.0.10
+version: 1.0.11
 schema: v1
 
 mcpServers:
@@ -14,3 +14,4 @@ mcpServers:
       - -i
       - --rm
       - cognee/cognee-mcp:main
+    connectionTimeout: 120000
